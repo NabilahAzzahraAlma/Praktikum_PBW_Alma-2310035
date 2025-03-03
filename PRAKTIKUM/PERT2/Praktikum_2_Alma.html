@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mendeklarasikan tipe dokumen sebagai HTML -->
+  <head>
+    <!-- Mendefinisikan karakter yang digunakan di dokumen ini sebagai UTF-8 -->
+    <meta charset="UTF-8" />
+    <!-- Membuat tampilan responsive dengan menyesuaikan tampilan ke lebar perangkat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Memberikan judul pada dokumen HTML -->
+    <title>Praktikum 2</title>
+  </head>
+  <body>
+    <!-- Contoh Dasar Form HTML -->
+    <form action="" method=""></form>
+    <br />
+
+    <!-- Contoh Penggunaan Input -->
+    <input type="text" name="username" /><br />
+
+    <!-- Berbeda dengan <input type="text">, textarea dapat memiliki banyak baris dan kolom -->
+    <textarea
+      name="komentar"
+      rows="4"
+      cols="50"
+      placeholder="Masukkan komentar Anda"
+    ></textarea
+    ><br />
+
+    <!-- Dropdown Combo Box dan List -->
+    <select name="pilihan">
+      <option value="1">Pilihan 1</option>
+      <option value="2">Pilihan 2</option></select
+    ><br />
+
+    <!-- Radio Button -->
+    <label><input type="radio" name="gender" value="male" /> Laki-laki</label
+    ><br />
+    <label><input type="radio" name="gender" value="female" /> Perempuan</label
+    ><br />
+
+    <!-- CheckBox -->
+    <label><input type="checkbox" name="hobi" value="musik" /> Musik</label
+    ><br />
+    <label
+      ><input type="checkbox" name="hobi" value="olahraga" /> Olahraga</label
+    ><br />
+    <label><input type="checkbox" name="hobi" value="membaca" /> Membaca</label
+    ><br />
+
+    <!-- Button -->
+    <button type="submit">Kirim</button><br />
+    <button type="button" onclick="alert('Halo!')">Klik Saya</button><br />
+
+    <!-- File Upload -->
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <label for="file">Pilih File:</label><br />
+      <input type="file" id="file" name="file" /><br />
+      <button type="submit">Unggah</button><br />
+    </form>
+    <br />
+
+    <!-- Validasi Form Dasar HTML -->
+    <input
+      type="text"
+      name="username"
+      required
+      minlength="5"
+      maxlength="20"
+    /><br />
+    <input type="email" name="email" required /><br />
+    <input type="number" name="age" min="18" max="60" /><br />
+    <button type="submit">Kirim</button><br />
+  </body>
+</html>

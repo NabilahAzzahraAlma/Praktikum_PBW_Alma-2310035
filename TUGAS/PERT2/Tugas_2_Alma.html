@@ -1,0 +1,90 @@
+<!--7. Studi Kasus - Membuat Form Pendaftaran Sederhana Silahkan anda membuat form sederhanya seperti dibawah ini, untuk tampilan yang lebih rapih anda dapat mengguanakan tabel untuk merapihkan tataletak. -->
+<!--Nabilah Azzahra Alma - 2310-035 - 4E Informatika-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas_2_PBW_ALMA</title>
+  </head>
+  <body>
+    <!-- Membuat container untuk form -->
+    <div class="form-container">
+      <!-- Membuat form -->
+      <form>
+        <!-- Menggunakan tabel untuk merapihkan tataletak form -->
+        <table>
+          <!-- Membuat baris pertama untuk input nama -->
+          <tr>
+            <td><label for="nama">Nama:</label></td>
+            <td><input type="text" id="nama" name="nama" /></td>
+          </tr>
+          <!-- Membuat baris kedua untuk input email -->
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" /></td>
+          </tr>
+          <!-- Membuat baris ketiga untuk input jenis kelamin -->
+          <tr>
+            <td><label>Jenis Kelamin:</label></td>
+            <td>
+              <input
+                type="radio"
+                id="laki-laki"
+                name="jenis_kelamin"
+                value="laki-laki"
+              />
+              <label for="laki-laki">Laki-laki</label>
+              <input
+                type="radio"
+                id="perempuan"
+                name="jenis_kelamin"
+                value="perempuan"
+              />
+              <label for="perempuan">Perempuan</label>
+            </td>
+          </tr>
+          <!-- Membuat baris keempat untuk input hobi -->
+          <tr>
+            <td><label>Hobi:</label></td>
+            <td>
+              <input type="checkbox" id="musik" name="hobi" value="musik" />
+              <label for="musik">Musik</label>
+              <input
+                type="checkbox"
+                id="olahraga"
+                name="hobi"
+                value="olahraga"
+              />
+              <label for="olahraga">Olahraga</label>
+            </td>
+          </tr>
+          <!-- Membuat baris kelima untuk memilih kota -->
+          <tr>
+            <td><label for="kota">Pilih Kota:</label></td>
+            <td>
+              <select id="kota" name="kota">
+                <option value="Jakarta">Jakarta</option>
+                <option value="Bandung">Bandung</option>
+                <option value="Surabaya">Surabaya</option>
+                <option value="Yogyakarta">Yogyakarta</option>
+                <option value="Karawang">Karawang</option>
+              </select>
+            </td>
+          </tr>
+          <!-- Membuat baris keenam untuk upload foto -->
+          <tr>
+            <td><label for="foto">Upload Foto:</label></td>
+            <td><input type="file" id="foto" name="foto" /></td>
+          </tr>
+          <!-- Membuat baris terakhir untuk tombol submit -->
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <button type="submit">Daftar</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
