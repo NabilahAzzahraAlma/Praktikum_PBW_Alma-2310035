@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Mengatur tata letak tubuh halaman agar konten terpusat */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Memastikan konten memanjang hingga tinggi layar */
+  margin: 0;
+  background-color: aliceblue;
+}
+
+/* Gaya untuk kartu */
+.card {
+  background: white;
+  padding: 20px;
+  max-width: 320px; /* Membuatnya lebih fleksibel jika diperlukan */
+  width: 100%; /* Supaya responsif di layar kecil */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan efek bayangan yang lebih halus */
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Animasi hover untuk kartu */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Gaya untuk judul */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Grup elemen formulir */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label formulir */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Styling khusus untuk grup radio dan checkbox */
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-direction: column; /* Susunan vertikal elemen */
+  gap: 10px; /* Jarak antar elemen */
+}
+
+/* Input radio dan checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px; /* Jarak antara input dan label */
+}
+
+/* Styling untuk label radio dan checkbox */
+.radio-group label,
+.checkbox-group label {
+  font-weight: normal;
+  display: flex;
+  align-items: center; /* Rata tengah secara vertikal */
+}
+
+/* Input teks, select, dan elemen lainnya */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Fokus pada input */
+input:focus,
+select:focus {
+  outline: none;
+  border-color: rgb(0, 162, 255);
+}
+
+/* Tombol */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(0, 162, 255);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Efek hover pada tombol */
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}

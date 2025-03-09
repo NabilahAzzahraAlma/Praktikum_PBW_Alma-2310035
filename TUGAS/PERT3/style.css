@@ -1,0 +1,171 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style untuk body */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e2e8f0;
+}
+
+/* Gaya untuk header: Memberikan latar belakang merah gelap, teks berwarna putih, 
+     perataan teks di tengah, dan padding */
+header {
+  background-color: #9c1328;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Gaya untuk navigasi: Memberikan latar belakang merah, padding, 
+         dan menempatkan konten di tengah */
+nav {
+  background-color: #d73e3e;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Container utama */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Konten utama */
+main {
+  flex: 2;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+aside {
+  flex: 1;
+  padding: 20px;
+  background-color: #bdc3c7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Semua elemen <h2> */
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Jarak antar bagian dalam formulir */
+  border: 1px solid #cbd5e0; /* Garis luar keseluruhan form (opsional) */
+  padding: 15px; /* Padding untuk keseluruhan form */
+  border-radius: 8px; /* Sudut melengkung */
+  background-color: #ffffff; /* Warna latar belakang formulir */
+}
+
+form .form-section {
+  border-top: 1px solid #cbd5e0; /* Garis pembatas antar bagian */
+  padding-top: 15px; /* Jarak dari garis atas */
+}
+
+form .form-section:first-of-type {
+  border-top: none; /* Hilangkan garis di bagian atas pertama */
+}
+
+form label {
+  font-weight: bold; /* Label menjadi tebal */
+  margin-bottom: 8px; /* Jarak bawah untuk label */
+  display: block; /* Memastikan elemen berada dalam satu baris */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select,
+form textarea {
+  padding: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  width: 100%;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin-right: 10px; /* Jarak antara input dan teks label */
+}
+
+form button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #2563eb;
+}
+
+/* Tombol */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #db343f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #2c3e50;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Media query */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  main {
+    margin-bottom: 20px;
+  }
+}

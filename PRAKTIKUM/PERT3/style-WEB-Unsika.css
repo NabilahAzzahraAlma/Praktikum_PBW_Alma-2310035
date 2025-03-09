@@ -1,0 +1,103 @@
+/* Selector universal: Mengatur ulang margin dan padding semua elemen, 
+   serta memastikan model kotak mencakup padding dan border dalam perhitungan lebar dan tinggi elemen */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gaya untuk header: Memberikan latar belakang merah gelap, teks berwarna putih, 
+     perataan teks di tengah, dan padding */
+header {
+  background-color: #9c1328;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Gaya untuk navigasi: Memberikan latar belakang merah, padding, 
+     dan menempatkan konten di tengah */
+nav {
+  background-color: #d73e3e;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Menghapus gaya daftar default (seperti bullet point) pada list navigasi */
+nav ul {
+  list-style: none;
+}
+
+/* Gaya untuk elemen daftar: Menampilkan daftar secara horizontal (inline) 
+     dan menambahkan jarak antar elemen */
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+/* Gaya untuk tautan: Mengubah warna teks menjadi putih 
+     dan menghilangkan garis bawah */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Gaya untuk container: Menggunakan Flexbox untuk tata letak 
+     dan menambahkan jarak antar elemen */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Gaya untuk konten utama: Menggunakan proporsi ruang lebih besar (flex 2), 
+     menambahkan padding, memberikan latar belakang abu-abu muda, 
+     dan sudut yang melengkung */
+.content {
+  flex: 2;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+}
+
+/* Gaya untuk sidebar: Menggunakan proporsi ruang lebih kecil (flex 1), 
+     menambahkan padding, memberikan latar belakang abu-abu, 
+     sudut melengkung, dan margin kiri untuk jarak antar elemen */
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  background-color: #bdc3c7;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+/* Gaya untuk footer: Menempatkan teks di tengah, menambahkan padding, 
+     memberikan latar belakang gelap, teks berwarna putih, dan margin atas */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #2c3e50;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Gaya untuk tombol: Membuat tombol merah dengan teks putih, 
+     sudut melengkung, padding, serta efek hover untuk perubahan warna dan pembesaran */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #db343f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Efek hover pada tombol: Mengubah warna latar belakang dan memperbesar tombol */
+.btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}

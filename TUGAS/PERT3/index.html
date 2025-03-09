@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Menghubungkan file CSS eksternal -->
+  </head>
+  <body>
+    <!-- Header halaman -->
+    <header>
+      <h1>Selamat Datang di Website Sederhana</h1>
+    </header>
+
+    <!-- Navigasi utama untuk berpindah antar halaman -->
+    <nav>
+      <ul>
+        <!-- Tautan menuju halaman Beranda -->
+        <li><a href="#">Beranda</a></li>
+        <!-- Tautan menuju halaman Tentang -->
+        <li><a href="#">Tentang</a></li>
+        <!-- Tautan menuju halaman Layanan -->
+        <li><a href="#">Layanan</a></li>
+        <!-- Tautan menuju halaman Kontak -->
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <!-- Bagian utama website -->
+    <div class="container">
+      <main>
+        <h2>Formulir Pendaftaran</h2>
+        <p>Silakan isi formulir di bawah ini untuk mendaftar.</p>
+        <form>
+          <div class="form-section">
+            <label>Nama Lengkap:</label>
+            <input type="text" />
+            <!-- Input untuk nama lengkap -->
+          </div>
+          <div class="form-section">
+            <label>Email:</label>
+            <input type="email" />
+            <!-- Input untuk email -->
+          </div>
+          <div class="form-section">
+            <label>Password:</label>
+            <input type="password" />
+            <!-- Input untuk password -->
+          </div>
+          <div class="form-section">
+            <label>Jenis Kelamin:</label>
+            <div>
+              <label><input type="radio" name="gender" /> Laki-Laki</label>
+              <!-- Pilihan Laki-laki -->
+            </div>
+            <div>
+              <label><input type="radio" name="gender" /> Perempuan</label>
+            </div>
+          </div>
+          <div class="form-section">
+            <label>Hobi:</label>
+            <div>
+              <label><input type="checkbox" /> Musik</label>
+              <!-- Checkbox untuk Musik -->
+            </div>
+            <div>
+              <label><input type="checkbox" /> Olahraga</label>
+              <!-- Checkbox untuk Olahraga -->
+            </div>
+            <div>
+              <label><input type="checkbox" /> Membaca</label>
+              <!-- Checkbox untuk Membaca -->
+            </div>
+          </div>
+          <div class="form-section">
+            <label>Pilih Kota:</label>
+            <select>
+              <option>Jakarta</option>
+              <option>Aceh</option>
+              <option>Surabaya</option>
+              <option>Papua</option>
+              <option>Yogyakarta</option>
+              <!-- Opsi dropdown -->
+            </select>
+          </div>
+          <div class="form-section">
+            <label>Pesan Tambahan:</label>
+            <textarea id="pesan" rows="4">Tulis pesan di sini...</textarea>
+            <!-- Text area -->
+          </div>
+          <button type="submit">Kirim</button>
+          <!-- Tombol kirim -->
+        </form>
+      </main>
+
+      <!-- Sidebar -->
+      <aside>
+        <h2>Sidebar</h2>
+        <p>
+          Bagian sidebar dapat berisi tautan, iklan, atau informasi tambahan.
+        </p>
+      </aside>
+    </div>
+
+    <!-- Script untuk textarea -->
+    <script>
+      document.getElementById("pesan").addEventListener("focus", function () {
+        if (this.value === "Tulis pesan di sini...") {
+          this.value = "";
+        }
+      });
+      document.getElementById("pesan").addEventListener("blur", function () {
+        if (this.value === "") {
+          this.value = "Tulis pesan di sini...";
+        }
+      });
+    </script>
+  </body>
+</html>
