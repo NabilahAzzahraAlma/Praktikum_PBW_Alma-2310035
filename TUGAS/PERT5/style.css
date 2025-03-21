@@ -1,0 +1,72 @@
+/* Aturan untuk body */
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; /* Mengatur font utama */
+  margin: 30px; /* Memberikan margin di sekitar body */
+  line-height: 1; /* Memberikan jarak antar baris */
+  background-color: #f7f7f7; /* Memberikan warna latar belakang */
+  color: #333; /* Warna teks */
+}
+
+/* Aturan untuk header */
+h1 {
+  text-align: center; /* Membuat teks berada di tengah */
+  color: #2c3e50; /* Memberikan warna pada header */
+  font-size: 2.8rem; /* Mengatur ukuran font */
+  margin-bottom: 25px; /* Memberikan jarak bawah */
+}
+
+/* Aturan untuk form */
+form {
+  background: #ffffff; /* Latar belakang form berwarna putih */
+  border: 2px solid #ddd; /* Menambahkan border tipis */
+  border-radius: 10px; /* Membuat sudut form melengkung */
+  padding: 25px; /* Memberikan padding di dalam form */
+  max-width: 400px; /* Membatasi lebar maksimum form */
+  margin: 0 auto; /* Memusatkan form di halaman */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan lembut */
+}
+
+/* Aturan untuk label */
+label {
+  font-weight: bold; /* Menebalkan teks label */
+  display: block; /* Menampilkan label sebagai blok */
+  margin-bottom: 10px; /* Memberikan jarak bawah */
+  font-size: 1.5rem;
+}
+
+/* Aturan untuk input */
+input[type="text"],
+input[type="number"] {
+  width: 100%; /* Membuat input memenuhi lebar form */
+  padding: 10px; /* Memberikan padding di dalam input */
+  margin-bottom: 15px; /* Memberikan jarak bawah */
+  border: 2px solid #ccc; /* Menambahkan border tipis */
+  border-radius: 4px; /* Membuat sudut input melengkung */
+  font-size: 1.7rem; /* Menyesuaikan ukuran teks */
+  box-sizing: border-box; /* Menghindari overflow */
+}
+
+/* Aturan untuk tombol */
+button {
+  background-color: #4855dfba; /* Warna biru untuk tombol */
+  color: #ffffff; /* Warna teks tombol putih */
+  padding: 10px 15px; /* Memberikan padding */
+  border: none; /* Menghapus border default */
+  border-radius: 4px; /* Membuat sudut tombol melengkung */
+  font-size: 2rem; /* Menyesuaikan ukuran font */
+  cursor: pointer; /* Memberikan kursor pointer */
+  width: 100%; /* Membuat tombol selebar form */
+}
+
+button:hover {
+  background-color: #2980b9; /* Memberikan efek hover dengan warna lebih gelap */
+}
+
+/* Aturan untuk hasil */
+.result {
+  margin-top: 20px; /* Memberikan jarak atas */
+  font-weight: bold; /* Menebalkan teks hasil */
+  color: #2ecc71; /* Warna hijau untuk hasil positif */
+  text-align: center; /* Membuat hasil berada di tengah */
+  font-size: 2rem; /* Menyesuaikan ukuran font hasil */
+}

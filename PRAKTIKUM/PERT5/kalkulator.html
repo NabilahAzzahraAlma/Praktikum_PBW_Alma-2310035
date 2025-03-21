@@ -1,0 +1,49 @@
+<!-- Pada bagian ini, kita akan membuat sebuah kalkulator sederhana menggunakan HTML, CSS, dan JavaScript, silahkan anda 
+ ketik kode dibawah ini dan simpan dalam extensi html.  -->
+
+<html>
+  <!-- Tag pembuka untuk dokumen HTML -->
+  <head>
+    <!-- Bagian head: berisi informasi metadata seperti judul halaman -->
+    <title>Kalkulator Sederhana</title>
+    <!-- Menentukan judul halaman yang akan muncul di tab browser -->
+  </head>
+  <body>
+    <!-- Bagian body: semua elemen yang akan tampil di halaman web ada di sini -->
+    <h2>Kalkulator</h2>
+    <!-- Menampilkan teks "Kalkulator" dengan ukuran heading level 2 -->
+
+    <input type="number" id="num1" />
+    <!-- Input pertama untuk angka. 'type="number"' memastikan hanya angka yang dapat dimasukkan. 
+         'id="num1"' memberikan identitas unik untuk elemen ini agar bisa diakses oleh JavaScript -->
+
+    <input type="number" id="num2" />
+    <!-- Input kedua untuk angka. Sama seperti input sebelumnya, dengan 'id="num2"' -->
+
+    <button onclick="hitung()">Hitung</button>
+    <!-- Tombol yang akan menjalankan fungsi 'hitung()' saat diklik. 
+         Fungsi ini ditentukan dalam bagian <script> -->
+
+    <p>Hasil: <span id="hasil"></span></p>
+    <!-- Paragraf untuk menampilkan teks "Hasil" dan tempat kosong (span) 
+         untuk menampilkan hasil penjumlahan. 'id="hasil"' digunakan agar JavaScript bisa mengisi nilai -->
+
+    <script>
+      <!-- Awal dari kode JavaScript -->
+      function hitung() {
+        // Deklarasi fungsi bernama 'hitung', yang akan dijalankan ketika tombol diklik
+        let num1 = document.getElementById("num1").value;
+        // Mengambil nilai dari input dengan 'id="num1"', hasilnya berupa string
+        let num2 = document.getElementById("num2").value;
+        // Mengambil nilai dari input dengan 'id="num2"', hasilnya juga berupa string
+        let hasil = parseInt(num1) + parseInt(num2);
+        // Menjumlahkan 'num1' dan 'num2'. parseInt() digunakan untuk mengonversi string menjadi angka
+        document.getElementById("hasil").innerText = hasil;
+        // Menampilkan hasil penjumlahan di dalam elemen <span> dengan 'id="hasil"'
+      }
+    </script>
+    <!-- Akhir dari kode JavaScript -->
+  </body>
+  <!-- Penutup bagian body -->
+</html>
+<!-- Penutup dokumen HTML -->

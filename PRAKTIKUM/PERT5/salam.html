@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- Menandakan bahwa dokumen menggunakan HTML5 sebagai standar markup -->
+<html lang="id">
+  <!-- Awal dokumen HTML dengan bahasa ditetapkan sebagai Bahasa Indonesia ("id") -->
+  <head>
+    <!-- Bagian head digunakan untuk metadata dan elemen-elemen yang tidak langsung terlihat di halaman -->
+    <meta charset="UTF-8" />
+    <!-- Menentukan bahwa dokumen menggunakan karakter encoding UTF-8 untuk mendukung berbagai karakter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Membuat halaman responsif dengan menyesuaikan lebar halaman sesuai dengan perangkat pengguna -->
+    <title>External JavaScript</title>
+    <!-- Judul halaman yang akan muncul pada tab browser -->
+  </head>
+  <body>
+    <!-- Bagian body yang memuat elemen-elemen yang terlihat oleh pengguna -->
+    <button onclick="salam()">Klik Saya</button>
+    <!-- Membuat tombol dengan teks "Klik Saya". Ketika tombol diklik, fungsi `salam()` akan dijalankan.
+         Fungsi ini didefinisikan dalam file JavaScript eksternal -->
+    <script src="script-salam.js"></script>
+    <!-- Menghubungkan file JavaScript eksternal bernama `script-salam.js` ke dokumen HTML. 
+         Semua kode JavaScript yang ada di file tersebut dapat digunakan di halaman ini -->
+  </body>
+</html>

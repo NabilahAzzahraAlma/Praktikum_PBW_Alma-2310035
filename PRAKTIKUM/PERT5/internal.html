@@ -1,0 +1,31 @@
+<html>
+  <!-- Tag pembuka untuk dokumen HTML -->
+  <head>
+    <!-- Bagian head digunakan untuk elemen metadata atau informasi halaman yang tidak langsung terlihat di layar -->
+    <title>Belajar JavaScript</title>
+    <!-- Menentukan judul halaman web yang akan muncul pada tab browser -->
+  </head>
+  <body>
+    <!-- Bagian body berisi elemen-elemen yang akan ditampilkan kepada pengguna -->
+    <h1 id="judul">Selamat Datang</h1>
+    <!-- Menampilkan teks "Selamat Datang" dalam header level 1 (besar).
+         'id="judul"' digunakan untuk memberikan identitas pada elemen ini agar bisa dimanipulasi oleh JavaScript. -->
+
+    <button onclick="ubahTeks()">Ubah Teks</button>
+    <!-- Menambahkan tombol dengan teks "Ubah Teks".
+         Atribut 'onclick="ubahTeks()"' akan menjalankan fungsi 'ubahTeks()' saat tombol diklik. -->
+
+    <script>
+      <!-- Awal blok kode JavaScript -->
+      function ubahTeks() {
+        // Mendeklarasikan fungsi bernama 'ubahTeks'
+        document.getElementById("judul").innerHTML = "Teks telah berubah!";
+        // Mengambil elemen dengan id="judul" menggunakan 'document.getElementById'
+        // Mengubah konten HTML dalam elemen tersebut menjadi "Teks telah berubah!"
+      }
+    </script>
+    <!-- Akhir blok kode JavaScript -->
+  </body>
+  <!-- Menutup bagian body dokumen HTML -->
+</html>
+<!-- Menutup dokumen HTML -->
