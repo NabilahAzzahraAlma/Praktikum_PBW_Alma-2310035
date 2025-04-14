@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas dan Praktikum - Alma 4E</title>
+    <style>
+      body {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        background-image: url("background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      header {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        width: 90%;
+        max-width: 1200px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+
+      header img {
+        height: 60px;
+      }
+
+      header h1 {
+        margin: 0;
+        padding: 0 10px;
+        flex-shrink: 0;
+        flex: 1;
+        text-align: center;
+        color: #333;
+        font-size: 1.5em;
+        margin: 0 10px;
+      }
+
+      .container {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+        max-width: 1200px;
+      }
+
+      .folder {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .folder h2 {
+        color: #0052ab;
+        margin-bottom: 10px;
+      }
+
+      .folder ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .folder ul li {
+        margin: 10px 0;
+      }
+
+      .folder a {
+        text-decoration: none;
+        color: #007bff;
+        transition: 0.3s;
+      }
+
+      .folder a:hover {
+        text-decoration: underline;
+        color: #0056b3;
+      }
+
+      footer {
+        margin: 30px 0;
+        text-align: center;
+        font-size: 0.5em;
+        color: #ffffff;
+      }
+
+      @media (max-width: 768px) {
+        header h1 {
+          margin: 10px 0;
+        }
+
+        .folder {
+          width: 100%;
+          max-width: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="logo-unsika.png" alt="Logo UNSIKA" />
+      <h1>Tugas dan Praktikum Pemrograman Berbasis Web - Alma 4E</h1>
+      <img src="logo-fasilkom.png" alt="Logo Fasilkom UNSIKA" />
+    </header>
+
+    <div class="container">
+      <div class="folder">
+        <h2>Praktikum</h2>
+        <ul>
+          <li>
+            <a href="PRAKTIKUM/PERT1/" target="_blank">Pertemuan 1</a>
+          </li>
+          <li>
+            <a href="PRAKTIKUM/PERT2/" target="_blank">Pertemuan 2</a>
+          </li>
+          <li>
+            <a href="PRAKTIKUM/PERT3/" target="_blank">Pertemuan 3</a>
+          </li>
+          <li>
+            <a href="PRAKTIKUM/PERT4/" target="_blank">Pertemuan 4</a>
+          </li>
+          <li>
+            <a href="PRAKTIKUM/PERT5/" target="_blank">Pertemuan 5</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="folder">
+        <h2>Tugas</h2>
+        <ul>
+          <li>
+            <a href="TUGAS/PERT1/" target="_blank">Pertemuan 1</a>
+          </li>
+          <li>
+            <a href="TUGAS/PERT2/" target="_blank">Pertemuan 2</a>
+          </li>
+          <li>
+            <a href="TUGAS/PERT3/" target="_blank">Pertemuan 3</a>
+          </li>
+          <li>
+            <a href="TUGAS/PERT4/" target="_blank">Pertemuan 4</a>
+          </li>
+          <li>
+            <a href="TUGAS/PERT5/" target="_blank">Pertemuan 5</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>&copy; 2025 Alma 4E. Copyright.</footer>
+  </body>
+</html>
