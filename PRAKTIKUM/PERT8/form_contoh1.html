@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Input</title>
+  </head>
+  <body>
+    <h2>Form Pendaftaran</h2>
+    <!-- Judul form yang akan ditampilkan di halaman -->
+
+    <form action="proses_form1.php" method="post">
+      <!-- Form kirim data ke proses_form1.php dengan metode POST -->
+
+      <label for="nama">Nama:</label>
+      <!-- input nama -->
+      <input type="text" id="nama" name="nama" required /> <br /><br />
+      <!-- Input teks nama-->
+
+      <label for="email">Email:</label>
+      <!-- input email -->
+      <input type="email" id="email" name="email" required /> <br /><br />
+      <!-- Input email lewat validasi email -->
+
+      <label for="usia">Usia:</label>
+      <!-- input usia -->
+      <input type="number" id="usia" name="usia" required /> <br /><br />
+      <!-- Input angka usia -->
+
+      <label for="gender">Jenis Kelamin:</label>
+      <!-- pilihan jenis kelamin -->
+      <select id="gender" name="gender">
+        <!-- Dropdown gender -->
+        <option value="Laki-laki">Laki-laki</option>
+        <!-- Pilihan jenis kelamin laki-laki -->
+        <option value="Perempuan">Perempuan</option>
+        <!-- Pilihan jenis kelamin perempuan -->
+      </select>
+      <br /><br />
+
+      <button type="submit">Kirim</button>
+      <!-- Tombol untuk kirim form -->
+    </form>
+  </body>
+</html>
+<!-- 
+required agar input wajib diisi sebelum dikirim.
+Dropdown pilihan gender user antara "Laki-laki" atau "Perempuan".
+Form kirim data ke proses_form1.php dengan metode POST, yang lebih aman dibandingkan GET -->

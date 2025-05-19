@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Input</title>
+  </head>
+  <body>
+    <h2>Form Pendaftaran</h2>
+    <!-- Judul form di halaman -->
+
+    <form action="proses_form2.php" method="post">
+      <!-- Form Kirim data ke proses_form2.php lewat metode POST -->
+
+      <label for="nama">Nama:</label>
+      <!-- input nama -->
+      <input type="text" id="nama" name="nama" required /><br /><br />
+      <!-- Input teks untuk nama-->
+
+      <label for="email">Email:</label>
+      <!-- input email -->
+      <input type="email" id="email" name="email" required /><br /><br />
+      <!-- Input email, harus berformat email -->
+
+      <button type="submit">Kirim</button>
+      <!-- Tombol kirim form -->
+    </form>
+  </body>
+</html>
+
+<!-- Penjelasan:
+Formulir HTML mengirimkan data ke proses.php melalui metode POST.
+Di proses.php, data ditangkap menggunakan $_POST['nama'] dan $_POST['email'].
+Data kemudian ditampilkan di halaman setelah pengguna mengisi formulir dan mengklik tombol Kirim. -->

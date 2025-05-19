@@ -1,4 +1,4 @@
-<!-- disini kita satukan untuk HTML, PHP dan CSS nya sebab kode masih singkat dan belum Kompleks,
+<!--update untuk latihan modul 7. disini kita pisahkan index. dan satukan untuk HTML, PHP dan CSS nya sebab kode masih singkat dan belum Kompleks,
     disertakan juga penjelasan pada setiap baris nya menurut pemahaman saya 
     Untuk css nya saya menggunakan template dari pertemuan 3 PBW-->
 
