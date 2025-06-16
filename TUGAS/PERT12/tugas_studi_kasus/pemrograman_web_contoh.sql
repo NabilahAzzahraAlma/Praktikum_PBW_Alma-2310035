@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 16 Jun 2025 pada 16.37
+-- Waktu pembuatan: 16 Jun 2025 pada 17.59
 -- Versi server: 8.4.3
 -- Versi PHP: 8.3.16
 
@@ -118,7 +118,8 @@ CREATE TABLE `pelanggan` (
 --
 
 INSERT INTO `pelanggan` (`ID`, `Nama`, `Alamat`, `Email`, `Telepon`) VALUES
-(1, 'Nabilah', 'Pamulang, Banten', 'nabilah@email.com', '081234567890');
+(1, 'Nabilah', 'Pamulang, Banten', 'nabilah@email.com', '081234567890'),
+(10, 'marsya', NULL, 'marsya5@unsika.ac.id', '087135763866');
 
 -- --------------------------------------------------------
 
@@ -131,19 +132,19 @@ CREATE TABLE `pengguna` (
   `nama` varchar(50) NOT NULL,
   `katasandi` varchar(255) NOT NULL,
   `role` enum('mahasiswa','dekan','kaprodi','rektor') NOT NULL,
-  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `email` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data untuk tabel `pengguna`
 --
 
-INSERT INTO `pengguna` (`id`, `nama`, `katasandi`, `role`, `created_at`) VALUES
-(1, 'udin', 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'mahasiswa', '2025-06-16 16:26:29'),
-(2, 'dekan1', '7675f5fe273f10751d06f906ddad4702d7d6ee77e8e6e47f13cba288d480aa1b', 'dekan', '2025-06-16 16:26:29'),
-(3, 'kaprodi1', 'dfb47846ddea38bdbff4c6b586f0da360391912e454d25bbd48b18f92a8210ac', 'kaprodi', '2025-06-16 16:26:29'),
-(4, 'rektor1', 'd12ba853c3dc2326404e8c76d582929d6cc50136a0f7f96157b0e065cbc23292', 'rektor', '2025-06-16 16:26:29'),
-(5, 'alma', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 'mahasiswa', '2025-06-16 16:35:41');
+INSERT INTO `pengguna` (`id`, `nama`, `katasandi`, `role`, `created_at`, `email`) VALUES
+(1, 'Nabilah', '467031', 'mahasiswa', '2025-06-16 17:29:39', 'n@gmail.com'),
+(2, 'Dekan1', '789456', 'dekan', '2025-06-16 17:50:00', 'dekan@example.com'),
+(3, 'Kaprodi1', '456789', 'kaprodi', '2025-06-16 17:51:00', 'kaprodi@example.com'),
+(4, 'Rektor1', '123789', 'rektor', '2025-06-16 17:52:00', 'rektor@example.com');
 
 -- --------------------------------------------------------
 
@@ -200,7 +201,8 @@ ALTER TABLE `pelanggan`
 -- Indeks untuk tabel `pengguna`
 --
 ALTER TABLE `pengguna`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- Indeks untuk tabel `pesanan`
@@ -229,13 +231,13 @@ ALTER TABLE `buku_terhapus`
 -- AUTO_INCREMENT untuk tabel `pelanggan`
 --
 ALTER TABLE `pelanggan`
-  MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT untuk tabel `pengguna`
 --
 ALTER TABLE `pengguna`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `pesanan`
